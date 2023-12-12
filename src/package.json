@@ -1,0 +1,35 @@
+{
+  "name": "vn-state",
+  "version": "1.0.0",
+  "description": "Simple State for JavaScript Applications",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "main": "index.mjs",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhannguyendevjs/vn-state.git"
+  },
+  "keywords": [
+    "vn",
+    "state",
+    "vnstate",
+    "vn-state"
+  ],
+  "author": "hoainhaannguyen@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nhannguyendevjs/vn-state/issues"
+  },
+  "homepage": "https://github.com/nhannguyendevjs/vn-state#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.4"
+  }
+}
