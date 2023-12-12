@@ -1,5 +1,7 @@
-import { cloneDeep } from 'lodash'
+import _ from 'lodash'
 import { Subject } from 'rxjs'
+
+const cloneDeep = _.cloneDeep
 
 class VNState {
   #state
@@ -50,6 +52,10 @@ class VNState {
     })
 
     return cloneDeep(this.#state)
+  }
+
+  effect(callbackFnc) {
+    this.stateChanges$.subscribe(callbackFnc)
   }
 }
 

@@ -5,6 +5,7 @@
   "engines": {
     "node": ">=18.0.0"
   },
+  "type": "module",
   "main": "index.mjs",
   "scripts": {
     "test": "vitest"
