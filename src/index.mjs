@@ -7,7 +7,7 @@ class VNState {
   #state
 
   #dataSource$ = new Subject()
-  stateChanges$ = this.#dataSource$.asObservable()
+  #stateChanges$ = this.#dataSource$.asObservable()
 
   get currentState() {
     return cloneDeep(this.#state)
@@ -55,7 +55,7 @@ class VNState {
   }
 
   effect(callbackFnc) {
-    this.stateChanges$.subscribe(callbackFnc)
+    this.#stateChanges$.subscribe(callbackFnc)
   }
 }
 
